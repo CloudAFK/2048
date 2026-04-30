@@ -1,32 +1,20 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   main.c                                             :+:      :+:    :+:   */
+/*   ft_utiles.h                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: marvin <marvin@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2026/04/29 21:52:15 by marvin            #+#    #+#             */
-/*   Updated: 2026/04/29 21:52:15 by marvin           ###   ########.fr       */
+/*   Created: 2026/04/30 00:43:30 by marvin            #+#    #+#             */
+/*   Updated: 2026/04/30 00:43:30 by marvin           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "ft_utiles.h"
+#ifndef FT_UTILES_H
+# define FT_UTILES_H
 
-int	main(void)
-{
-	char	*line_1;
-	char	*line_2;
-	int		count_1;
+# include <unistd.h>
 
-	line_1 = " ----- ";
-	line_2 = "|     |";
-	count_1 = 0;
-	while (count_1 < 4)
-	{
-		ft_aff_case(line_1);
-		ft_aff_case(line_2);
-		ft_aff_case(line_2);
-		ft_aff_case(line_1);
-		count_1++;
-	}
-}
+void	ft_aff_case(char *line);
+
+#endif

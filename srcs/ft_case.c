@@ -1,32 +1,26 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   main.c                                             :+:      :+:    :+:   */
+/*   ft_case.c                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: marvin <marvin@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2026/04/29 21:52:15 by marvin            #+#    #+#             */
-/*   Updated: 2026/04/29 21:52:15 by marvin           ###   ########.fr       */
+/*   Created: 2026/04/30 00:42:11 by marvin            #+#    #+#             */
+/*   Updated: 2026/04/30 00:42:11 by marvin           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "ft_utiles.h"
 
-int	main(void)
+void	ft_aff_case(char *line)
 {
-	char	*line_1;
-	char	*line_2;
-	int		count_1;
+	int	count;
 
-	line_1 = " ----- ";
-	line_2 = "|     |";
-	count_1 = 0;
-	while (count_1 < 4)
+	count = 0;
+	while (count < 4)
 	{
-		ft_aff_case(line_1);
-		ft_aff_case(line_2);
-		ft_aff_case(line_2);
-		ft_aff_case(line_1);
-		count_1++;
+		write(1, line, 8);
+		count++;
 	}
+	write(1, "\n", 1);
 }
