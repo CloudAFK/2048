@@ -14,19 +14,8 @@
 
 int	main(void)
 {
-	char	*line_1;
-	char	*line_2;
-	int		count_1;
+	int	grid[4][4];
 
-	line_1 = " ----- ";
-	line_2 = "|     |";
-	count_1 = 0;
-	while (count_1 < 4)
-	{
-		ft_aff_case(line_1);
-		ft_aff_case(line_2);
-		ft_aff_case(line_2);
-		ft_aff_case(line_1);
-		count_1++;
-	}
+	ft_init_tab(grid);
+	ft_call_case();
 }

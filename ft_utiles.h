@@ -16,5 +16,7 @@
 # include <unistd.h>
 
 void	ft_aff_case(char *line);
+void	ft_call_case(void);
+void	ft_init_tab(int grid[4][4]);
 
 #endif
